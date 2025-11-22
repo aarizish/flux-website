@@ -10,6 +10,7 @@ import Feedback from './components/Feedback'
 import ThankYou from './components/ThankYou'
 import Examples from './components/Examples'
 import Companion from './components/Companion'
+import Privacy from './components/Privacy'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/thank-you' element={ <ThankYou /> } />
         <Route path='/examples' element={ <Examples /> } />
         <Route path='/companion' element={ <Companion /> } />
+        <Route path='/privacy' element={ <Privacy /> } />
       </Routes>
       <Footer />
     </>
