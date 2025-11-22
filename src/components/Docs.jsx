@@ -1,5 +1,14 @@
 import React from 'react'
 import { AiOutlineCaretRight } from "react-icons/ai"
+import apiKeyBlock from '../assets/api-key-block.png'
+import apiUrlBlock from '../assets/api-url-block.png'
+import callBlock from '../assets/call-block.png'
+import errorBlock from '../assets/error-block.png'
+import gotBlock from '../assets/got-block.png'
+import headersBlock from '../assets/headers-block.png'
+import methodsBlock from '../assets/method-block.png'
+import paramsBlock from '../assets/params-block.png'
+import exampleBlocks from '../assets/example-blocks.png'
 
 const Docs = () => {
   return (
@@ -16,29 +25,54 @@ const Docs = () => {
 
           <div className="inner">
             <h2>Available Blocks</h2>
-            <ul style={{ textAlign: 'left', lineHeight: '2rem' }}>
-              <li><strong>SetApiKey(text)</strong>: Set your API or RapidAPI key.</li>
-              <li><strong>SetApiUrl(text)</strong>: Full API endpoint (e.g., <code>https://example.com/api</code>).</li>
-              <li><strong>SetHeaders(json)</strong>: Optional headers in JSON string (e.g., <code>{'{ "x-rapidapi-host": "xyz" }'}</code>).</li>
-              <li><strong>SetParameters(query)</strong>: Optional query parameters (e.g., <code>limit=1&lang=en</code>).</li>
-              <li><strong>SetRequestMethod("GET" or "POST")</strong>: HTTP method (default: <code>GET</code>).</li>
-              <li><strong>MakeApiCall()</strong>: Executes the API request.</li>
-              <li><strong>GotResponse(text)</strong>: Event triggered when the request succeeds.</li>
-              <li><strong>Error(text)</strong>: Event triggered when something goes wrong.</li>
+            <ul className='docs-list' style={{ textAlign: 'left', lineHeight: '2rem' }}>
+              <li>
+                <img src={apiKeyBlock} alt="API Key Block" width="300" />
+                <br />
+                <strong>SetApiKey(text)</strong>: Set your API or RapidAPI key.
+              </li>
+              <li>
+                <img src={apiUrlBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>SetApiUrl(text)</strong>: Full API endpoint (e.g., <code>https://example.com/api</code>).
+              </li>
+              <li>
+                <img src={headersBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>SetHeaders(json)</strong>: (Optional) headers in JSON string (e.g., <code>{'{ "x-rapidapi-host": "xyz" }'}</code>).
+              </li>
+              <li>
+                <img src={paramsBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>SetParameters(query)</strong>: (Optional) query parameters (e.g., <code>limit=1&lang=en</code>).
+              </li>
+              <li>
+                <img src={methodsBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>SetRequestMethod("GET" or "POST")</strong>: HTTP method (default: <code>GET</code>).
+              </li>
+              <li>
+                <img src={callBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>MakeApiCall()</strong>: Executes the API request.
+              </li>
+              <li>
+                <img src={gotBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>GotResponse(text)</strong>: Event triggered when the request succeeds.
+              </li>
+              <li>
+                <img src={errorBlock} alt="API URL Block" width="300" />
+                <br />
+                <strong>Error(text)</strong>: Event triggered when something goes wrong.
+              </li>
             </ul>
           </div>
 
           <div className="inner">
             <h2>Example</h2>
             <p>Here's how you can make a GET request to the <strong>Facts API</strong> from RapidAPI:</p>
-            <pre style={{ textAlign: 'left', backgroundColor: '#f5f5f7', padding: '20px', borderRadius: '12px' }}>
-{`SetApiKey("your-rapidapi-key")
-SetApiUrl("https://facts-by-api-ninjas.p.rapidapi.com/v1/facts")
-SetHeaders("{\"x-rapidapi-host\": \"facts-by-api-ninjas.p.rapidapi.com\"}")
-SetParameters("limit=1")
-SetRequestMethod("GET")
-MakeApiCall()`}
-            </pre>
+            <img src={exampleBlocks} alt="API URL Block" width="700" />
             <p>Use the <code>GotResponse</code> block to display or parse the response JSON in your app.</p>
           </div>
 

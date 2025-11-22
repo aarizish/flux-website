@@ -209,3 +209,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.salient-features{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.docs-list{
+  list-style-type: none;
+}

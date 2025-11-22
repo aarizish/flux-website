@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="center">
                 <ul>
                     <Link to='/docs'><li>Docs</li></Link>
-                    <Link to='/download'><li>Download</li></Link>
+                    <Link to='https://drive.google.com/uc?export=download&id=1gzdWoOPi7voMCLppGxiZoNLEVQY4wsSV'><li>Download</li></Link>
                     <Link to='/examples'><li>Examples</li></Link>
                     <Link to='/companion'><li>Companion</li></Link>
                     <Link to='/contribute'><li>Contribute</li></Link>
