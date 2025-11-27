@@ -11,104 +11,115 @@ const Privacy = () => {
           <div className="inner">
             <h2>Introduction</h2>
             <p>
-              “Does this app secretly spy on me?” they asked.<br />
-              “Not even close,” I replied.
+              This Privacy Policy explains how Flux Companion handles your data.
+              Flux Companion is a local API testing utility for Android devices.
+              It does not collect, store, or transmit any personal information.
             </p>
             <p>
-              Flux Companion is a tiny utility designed to help you test HTTP API calls
-              on your Android device. No accounts, no tracking, no analytics, no
-              nonsense. Just clean, direct API testing.
+              The app functions entirely on-device and does not require any
+              account, login, analytics, or cloud connectivity for its core
+              features.
             </p>
           </div>
 
           <div className="inner">
             <h2>What Flux Companion Collects</h2>
             <p>
-              Let’s make this very clear: <strong>Flux Companion collects nothing.</strong>
+              Flux Companion does <strong>not</strong> collect or transmit any user
+              data. Specifically, the app does not gather:
             </p>
-            <p>
-              No personal information, no device identifiers, no IP logs, no analytics,
-              and absolutely no behavioral tracking.
-            </p>
+
             <ul className="docs-list">
-              <li>No personal data</li>
-              <li>No location data</li>
-              <li>No usage statistics</li>
-              <li>No API content is saved</li>
-              <li>No background data collection</li>
+              <li>Personal information</li>
+              <li>Device identifiers</li>
+              <li>Location data</li>
+              <li>Usage or analytics data</li>
+              <li>API content or request bodies</li>
+              <li>Background activity or logs</li>
             </ul>
+
             <p>
-              The app doesn’t even have an internet backend. It literally cannot send
-              information anywhere except to the API <em>you</em> choose.
+              Flux Companion contains no backend and no cloud services. It cannot
+              upload information to any server other than the API endpoints you
+              intentionally connect to.
             </p>
           </div>
 
           <div className="inner">
-            <h2>How Your Data Is Stored</h2>
+            <h2>Local Data Storage</h2>
             <p>
-              Flux Companion stores your request history, headers, and parameters
-              <strong> only on your device</strong>. Local storage only, nothing leaves
-              your phone.
+              Certain optional data—such as request history, headers, or parameters—
+              may be stored <strong>locally on your device</strong> to improve
+              usability.
             </p>
             <p>
-              If you uninstall the app or clear its data, everything disappears instantly.
+              This information remains fully on your device and never leaves it.
+              Clearing the app data or uninstalling the app permanently removes
+              everything.
             </p>
           </div>
 
           <div className="inner">
             <h2>Your API Requests</h2>
             <p>
-              Think of Flux Companion as a waiter. You enter your order (the API call),
-              it delivers the request to the kitchen (the server), and brings the dish
-              back.
+              Flux Companion sends API requests only to the endpoints that you
+              manually specify. The app does not intercept, store, analyze, or
+              transmit these requests or responses.
             </p>
             <p>
-              But the waiter has memory loss. It forgets everything immediately.
-            </p>
-            <p>
-              Only <strong>the API you contact</strong> receives your request. If that
-              service collects data, logs requests, or tracks analytics, that’s between
-              <em> you</em> and <em>them</em>. Flux Companion is not involved.
+              Any data sent to third-party services is governed by their
+              respective privacy policies. Flux Companion is not responsible for
+              how external APIs handle or store that data.
             </p>
           </div>
 
-          {/* SECTION 5 */}
           <div className="inner">
             <h2>No Third-Party Services</h2>
-            <p>The app uses no external SDKs or trackers, including:</p>
+            <p>
+              Flux Companion does not integrate or communicate with any
+              third-party SDKs, including:
+            </p>
+
             <ul className="docs-list">
               <li>Google Analytics</li>
-              <li>Firebase</li>
+              <li>Firebase Analytics</li>
               <li>Crashlytics</li>
-              <li>AdMob or any ads platform</li>
+              <li>AdMob or advertising platforms</li>
               <li>Facebook SDK</li>
-              <li>Telemetry / analytics services</li>
+              <li>Telemetry or tracking services</li>
             </ul>
-            <p>You get a clean, minimal, privacy-respecting utility.</p>
+
+            <p>
+              The app contains no tracking, analytics, ads, or external data
+              pipelines of any kind.
+            </p>
           </div>
 
           <div className="inner">
             <h2>Your Rights</h2>
             <p>
-              Since Flux Companion stores <strong>no personal data</strong> whatsoever:
+              Because Flux Companion does not collect or store personal data:
             </p>
+
             <ul className="docs-list">
-              <li>There’s nothing to request</li>
-              <li>Nothing to export</li>
-              <li>Nothing to delete</li>
-              <li>Nothing stored on a server</li>
+              <li>No personal data is retained</li>
+              <li>No data is stored on servers</li>
+              <li>No data is available to export</li>
+              <li>No deletion requests are necessary</li>
             </ul>
+
             <p>
-              Everything is local. You’re in complete control.
+              All information remains on your device, under your complete control.
             </p>
           </div>
 
           <div className="inner">
-            <h2>Questions?</h2>
+            <h2>Questions or Support</h2>
             <p>
-              If you ever have questions, ideas, or want to suggest improvements,
-              feel free to reach out through the official Flux website’s feedback form.
+              If you have questions or suggestions, you may contact the developer
+              through the official Flux website’s feedback form or at:
             </p>
+            <p><strong><a href="https://www.aarizish.in/contact/">aarizish.in/contact</a></strong></p>
           </div>
 
         </div>
@@ -117,4 +128,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy
+export default Privacy;
